@@ -1,0 +1,27 @@
+
+
+
+def tester(givenstring="Too short"):
+    
+    return givenstring
+    
+
+def main():
+    i=0
+    while i<=100:
+        x=str(input("Write something (quit ends): "))
+        tester(x)
+        if (len(x)<=10) and (x!='quit'):
+            y=tester()
+            print(y)
+        
+    
+        elif len(x)>=10:
+            print(x)
+    
+        elif x=='quit':
+            exit()
+    i+=1
+
+if __name__ == "__main__":
+    main()
